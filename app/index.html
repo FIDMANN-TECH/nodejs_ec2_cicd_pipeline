@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CI/CD Deployment Demo</title>
+  <style>
+    body { font-family: Arial; padding: 40px; }
+    h1 { color: #0066ff; }
+  </style>
+</head>
+<body>
+  <h1>CI/CD Demo App</h1>
+  <p>This page was deployed to AWS EC2 using GitHub Actions.</p>
+  <p>Timestamp: <span id="ts"></span></p>
+
+  <script>
+    document.getElementById("ts").textContent = new Date().toISOString();
+  </script>
+</body>
+</html>
